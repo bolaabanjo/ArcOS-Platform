@@ -18,3 +18,5 @@ This file tracks the significant changes, features, and improvements made to the
 - Corrected `@supabase/ssr` import issue in `client.ts` by using `@supabase/supabase-js` for browser client.
 - Ensured all client components (`signin/page.tsx`, `signup/page.tsx`, `onboarding/profile-setup/page.tsx`, `dashboard/page.tsx`, `portfolio/edit/[id]/page.tsx`) have the `'use client'` directive.
 - Refactored server-side Supabase client initialization in `layout.tsx` to use a dedicated helper (`utils/supabase/server.ts`), resolving persistent session/cookie handling errors and redirects.
+- Fixed `react/no-unescaped-entities` error in `signin/page.tsx`.
+- Addressed `@typescript-eslint/no-explicit-any` warning in `utils/supabase/server.ts` by providing explicit types.
