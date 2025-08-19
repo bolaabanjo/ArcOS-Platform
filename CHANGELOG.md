@@ -13,3 +13,8 @@ This file tracks the significant changes, features, and improvements made to the
 - Configured environment variables for Supabase credentials (manual setup).
 - Established a Supabase client and session provider for client-side components.
 - Initialized Git repository and pushed code to GitHub.
+
+### Fix
+- Corrected `@supabase/ssr` import issue in `client.ts` by using `@supabase/supabase-js` for browser client.
+- Ensured all client components (`signin/page.tsx`, `signup/page.tsx`, `onboarding/profile-setup/page.tsx`, `dashboard/page.tsx`, `portfolio/edit/[id]/page.tsx`) have the `'use client'` directive.
+- Refactored server-side Supabase client initialization in `layout.tsx` to use a dedicated helper (`utils/supabase/server.ts`), resolving persistent session/cookie handling errors and redirects.
