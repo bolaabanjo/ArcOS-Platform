@@ -20,3 +20,4 @@ This file tracks the significant changes, features, and improvements made to the
 - Refactored server-side Supabase client initialization in `layout.tsx` to use a dedicated helper (`utils/supabase/server.ts`), resolving persistent session/cookie handling errors and redirects.
 - Fixed `react/no-unescaped-entities` error in `signin/page.tsx`.
 - Addressed `@typescript-eslint/no-explicit-any` warning in `utils/supabase/server.ts` by providing explicit types.
+- Simplified `portfolio/edit/[id]/page.tsx` to a basic display to troubleshoot Vercel build issues.
