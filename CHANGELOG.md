@@ -26,3 +26,4 @@ This file tracks the significant changes, features, and improvements made to the
 
 ### Chore
 - Bumped frontend package.json version to 0.1.1 to trigger a new Vercel deployment.
+
