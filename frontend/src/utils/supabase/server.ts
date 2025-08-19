@@ -1,5 +1,5 @@
 import { createServerClient } from '@supabase/ssr';
-import { cookies, CookieSerializeOptions } from 'next/headers'; // Import CookieSerializeOptions
+import { cookies, CookieSerializeOptions } from 'next/headers';
 
 export const createClient = () => {
   const cookieStore = cookies();
@@ -11,7 +11,7 @@ export const createClient = () => {
       cookies: {
         get: (name: string) => cookieStore.get(name)?.value,
         set: (name: string, value: string, options: CookieSerializeOptions) => cookieStore.set({ name, value, ...options }),
-        remove: (name: string, options: CookieSerializeOptions) => cookieStore.set({ name, value: '', ...options }),
+        remove: (name: string, value: string, options: CookieSerializeOptions) => cookieStore.set({ name, value: '', ...options }),
       },
     }
   );

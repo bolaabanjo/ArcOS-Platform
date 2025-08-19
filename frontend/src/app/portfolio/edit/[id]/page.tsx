@@ -1,12 +1,6 @@
 'use client';
 
-interface PortfolioEditProps {
-  params: {
-    id: string
-  }
-}
-
-export default function PortfolioEditPage({ params }: PortfolioEditProps) {
+export default function PortfolioEditPage({ params }: { params: { id: string } }) {
   const { id } = params
 
   return (
