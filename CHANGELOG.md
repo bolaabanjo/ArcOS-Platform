@@ -21,3 +21,4 @@ This file tracks the significant changes, features, and improvements made to the
 - Fixed `react/no-unescaped-entities` error in `signin/page.tsx`.
 - Addressed `@typescript-eslint/no-explicit-any` warning in `utils/supabase/server.ts` by providing explicit types.
 - Simplified `portfolio/edit/[id]/page.tsx` to a basic display to troubleshoot Vercel build issues.
+- Resolved `PageProps` type error in `portfolio/edit/[id]/page.tsx` by directly defining `params` type in component signature.
