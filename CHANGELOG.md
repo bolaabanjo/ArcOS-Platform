@@ -23,3 +23,6 @@ This file tracks the significant changes, features, and improvements made to the
 - Simplified `portfolio/edit/[id]/page.tsx` to a basic display to troubleshoot Vercel build issues.
 - Resolved `PageProps` type error in `portfolio/edit/[id]/page.tsx` by directly defining `params` type in component signature.
 - Implemented final consolidated fixes across various files to resolve persistent Vercel deployment issues.
+
+### Chore
+- Bumped frontend package.json version to 0.1.1 to trigger a new Vercel deployment.
